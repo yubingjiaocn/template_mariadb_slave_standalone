@@ -625,6 +625,9 @@ EOF
     content     = <<EOF
 change master to master_host = '${var.Node01_mariadb_master_address}',master_user = '${var.Node01_mariadb_master_rep_username}',master_password = '${var.Node01_mariadb_master_rep_password}', master_use_gtid = current_pos;
 start slave;
+stop slave;
+RESET SLAVE;
+start slave;
 EOF
   }
 
