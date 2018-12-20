@@ -564,7 +564,7 @@ resource "camc_softwaredeploy" "Node01_mariadb" {
         "sw_repo_password": "${var.ibm_sw_repo_password}"
       },
       "mariadb": {
-        "server_root_password": "${var.Node01_mariadb_root_password}",
+        "server_root_password": "${var.Node01_mariadb_root_password}"
       }
     },
     "vault": "${var.ibm_stack_id}"
